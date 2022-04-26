@@ -58,7 +58,7 @@ def write_parquet(data: pd.DataFrame, bucket: str = 'cmc-bds-de', object: str = 
     # your code here
 
 
-data = read_parquet()
+data: pd.DataFrame = read_parquet()
 
 # expected:
 #
@@ -67,7 +67,7 @@ data = read_parquet()
 # 2  a  C  3.0   h6as7d
 # 4  b  B  5.0  dashd77
 # 5  b  C  6.0  mdas7gg
-data_non_null = analytics.Ops.dropna(data)
+data_non_null: pd.DataFrame = analytics.Ops.dropna(data)
 
 data = None
 if not data_non_null:
@@ -79,6 +79,6 @@ if not data_non_null:
 # A                       
 # a  13.0    4.41332  3.40
 # b  54.0  123.12000  6.12
-data_pivot = analytics.Ops.pivot(data_non_null, index='A', columns='B', values='C')
+data_pivot: pd.DataFrame = analytics.Ops.pivot(data_non_null, index='A', columns='B', values='C')
 
-data = write_parquet(data_pivot, object='your/name/of/choice.parquet')
+write_parquet(data_pivot, object='your/name/of/choice.parquet')
