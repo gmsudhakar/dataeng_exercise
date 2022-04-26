@@ -79,6 +79,6 @@ if not data_non_null:
 # A                       
 # a  13.0    4.41332  3.40
 # b  54.0  123.12000  6.12
-data_pivot = analytics.Ops.pivot(data_non_null)
+data_pivot = analytics.Ops.pivot(data_non_null, index='A', columns='B', values='C')
 
 data = write_parquet(data_pivot, object='your/name/of/choice.parquet')
