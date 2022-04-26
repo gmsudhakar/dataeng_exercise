@@ -1,0 +1,26 @@
+---
+pr:
+  - main
+  - tst
+trigger:
+  - main
+  - tst
+
+pool:
+  vmImage: ubuntu-20.04
+
+jobs:
+  - job: build_and_publish_python_package
+    displayName: Build and Publish Python Package
+    steps:
+      - script: # your cmds here
+        displayName: Lint
+
+      - script: # your cmds here
+        displayName: Unit testing
+
+      - script: # your cmds here
+        displayName: Build
+
+      - script: # your cmds here
+        displayName: Publish to PyPi
