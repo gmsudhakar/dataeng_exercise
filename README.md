@@ -74,4 +74,6 @@ TODO
 
 # Exercise 3
 
-Complete `exercise_3/exercise_3.py` such that it compiles and executes. We're expecting to find the result in our S3 bucket :)
+TODO:
++ Complete `exercise_3/exercise_3.py` such that it compiles and executes. We're expecting to find the result in our S3 bucket :)
++ Lint `exercise_3/exercise_3.py`
