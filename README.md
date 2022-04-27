@@ -63,7 +63,7 @@ TODO:
 
 # Exercise 2
 
-You're asked to build and publish a python package to a public package index ([pypi](https://pypi.org/)). The package should include a class `Ops` and two methods `remove_null_values`, `pivot` such that the script `exercise_3/exercise_3.py` compiles and executes as expected. The commands you use to build and publish the package go to the script `exercise_2/azure-pipelines.yml`. This CICD pipeline script will encapsulate the logic for the following devops steps:
+You're asked to build and publish a python package to a public package index ([pypi](https://pypi.org/)). The package should include a class `Ops` and two methods `remove_null_values`, `rotate` such that the script `exercise_3/exercise_3.py` compiles and executes as expected. The commands you use to build and publish the package go to the script `exercise_2/azure-pipelines.yml`. This CICD pipeline script will encapsulate the logic for the following devops steps:
 - linting
 - unit testing
 - building
