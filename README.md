@@ -29,6 +29,10 @@ aws s3 cp s3://cmc-bds-de/wishes/you/good/luck.parquet data.parquet --profile ex
 download: s3://cmc-bds-de/wishes/you/good/luck.parquet to ./data.parquet
 ```
 
+TODO:
++ **exercise** Explain how you configured the aws profile indicating the path and the contents of the configuration and the credentials files.
+    + **solution** your-solution-here (commit `README.md` to the `exercise_0` branch)
+
 # Exercise 1
 
 Fork this repo. Your fork should include the following branching strategy:
@@ -40,6 +44,7 @@ main
   │
   └╴dev
     │
+    ├╴ exercise_0
     ├╴ exercise_1
     ├╴ exercise_2
     └╴ exercise_3
@@ -52,8 +57,8 @@ TODO:
     + issue a PR from `dev` to `tst`, approve it
     + issue a PR from `tst` to `main`, approve it
 + branch `exercise_x` further should you find it fit
-+ **question** why are git branching strategies important? (commit `README.md` to the `exercise_1` branch)
-    + Answer: **your answer here**
++ **exercise** why are git branching strategies important?
+    + **solution**: your-answer-here (commit `README.md` to the `exercise_1` branch)
 
 
 # Exercise 2
@@ -77,5 +82,5 @@ TODO
 # Exercise 3
 
 TODO:
-+ **exercise** complete `exercise_3/exercise_3.py` such that it compiles and executes. We're expecting to find the result in our S3 bucket.
++ **exercise** complete `exercise_3/exercise_3.py` (`read_parquet` and `write_parquet`) such that it writes the expected result to our S3 bucket.
 + **exercise** lint `exercise_3/exercise_3.py`
