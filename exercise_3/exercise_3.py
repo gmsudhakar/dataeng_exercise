@@ -1,4 +1,4 @@
-import analytics
+# from your_package_name import analytics
 import boto3
 import pandas as pd
 
