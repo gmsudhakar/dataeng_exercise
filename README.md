@@ -69,16 +69,16 @@ You're asked to build and publish a python package to a public package index ([p
 - building
 - publishing
 
-
-
 TODO
-+ **optional** setup a CICD pipeline automating all these steps (you can opt by any other pipelines provider, please send us an url to the pipeline if you choose to do it).
-+ **exercise** include all the dependencies you see fit in `exercise_2/requirements.txt`.
-+ **exercise** Create your own package in `exercise_2/{your-package-name}`, but `exercise_3/exercise_3.py` **should** import from [pypi](https://pypi.org/), not from `exercise_2/{your-package-name}`. If you can't publish the package to Pypi, import it locally. You will need it for the **Exercise 3**.
-+ **exercise** include a dir `test` in your package with whatever unit tests you might find suiting. Make sure the tests are passing.
-+ **exercise** include pydocs in the module, class and methods.
++ **exercise** add the cmds for the steps above in the corresponding steps in `exercise_2/{your_package_name}/azure-pipelines.yml`
++ **exercise** `exercise_2/{your_package_name}/setup.py`
++ **exercise** hide your pypi credentials `exercise_2/{your_package_name}/.pypirc`.
++ **exercise** include all the dependencies you see fit in `exercise_2/{your_package_name}/requirements.txt`.
++ **exercise** Create your own package in `exercise_2/{your_package_name}`, but `exercise_3/exercise_3.py` **should** import from [pypi](https://pypi.org/), not from `exercise_2/{your_package_name}`. If you can't publish the package to Pypi, import it locally. You will need it for the **Exercise 3**.
++ **exercise** include unit tests in `exercise_2/{your_package_name}/test` with whatever unit tests you might find suiting. Make sure the tests are passing.
++ **exercise** include pydocs in the module, class and methods
 + **exercise** lint the code
-
++ **optional** setup a CICD pipeline automating all these steps (you can opt by any other pipelines provider, please send us an url to the pipeline if you choose to do it).
 
 # Exercise 3
 
