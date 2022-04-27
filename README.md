@@ -72,7 +72,7 @@ You're asked to build and publish a python package to a public package index ([p
 
 
 TODO
-+ **optional** setup pipeline automating all these steps (you can opt by any other pipelines provider, please send us an url to the pipeline if you choose to do it).
++ **optional** setup a CICD pipeline automating all these steps (you can opt by any other pipelines provider, please send us an url to the pipeline if you choose to do it).
 + **exercise** include all the dependencies you see fit in `exercise_2/requirements.txt`.
 + **exercise** Create your own package in `exercise_2/{your-package-name}`, but `exercise_3/exercise_3.py` **should** import from [pypi](https://pypi.org/), not from `exercise_2/{your-package-name}`. If you can't publish the package to Pypi, import it locally. You will need it for the **Exercise 3**.
 + **exercise** include a dir `test` in your package with whatever unit tests you might find suiting. Make sure the tests are passing.
