@@ -5,6 +5,8 @@ import pandas as pd
 def read_parquet(bucket: str = 'cmc-bds-de', object: str = 'wishes/you/good/luck.parquet') -> pd.DataFrame:
     """Reads a parquet file from an S3 bucket object into a pandas dataframe.
 
+    Note: Don't read the file from your local FS.
+
     Args:
         bucket (str, optional): The S3 bucket. Defaults to 'cmc-bds-de'.
         object (str, optional): The S3 bucket object. Defaults to 'wishes/you/good/luck.parquet'.
