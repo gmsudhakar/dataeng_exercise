@@ -69,9 +69,10 @@ You're asked to build and publish a python package to a public package index ([p
 - building
 - publishing
 
-We don't ask that you setup a pipeline to actually do all of these things, but you're encouraged to do it should you find yourself having the time! (you can opt by any other pipelines provider, please send us an url to the pipeline if you choose to do it).
+
 
 TODO
++ **optional** setup pipeline automating all these steps (you can opt by any other pipelines provider, please send us an url to the pipeline if you choose to do it).
 + **exercise** include all the dependencies you see fit in `exercise_2/requirements.txt`.
 + **exercise** Create your own package in `exercise_2/{your-package-name}`, but `exercise_3/exercise_3.py` **should** import from [pypi](https://pypi.org/), not from `exercise_2/{your-package-name}`. If you can't publish the package to Pypi, import it locally. You will need it for the **Exercise 3**.
 + **exercise** include a dir `test` in your package with whatever unit tests you might find suiting. Make sure the tests are passing.
@@ -84,3 +85,4 @@ TODO
 TODO:
 + **exercise** complete `exercise_3/exercise_3.py` (`read_parquet` and `write_parquet`) such that it writes the expected result to our S3 bucket.
 + **exercise** lint `exercise_3/exercise_3.py`
++ **optional** add unit tests to `exercise_3/exercise_3.py`
