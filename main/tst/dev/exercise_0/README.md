@@ -12,5 +12,5 @@ output = text
 Here is the content of c:\Users\Sud\.aws\credentials
 
 [exercise]
-aws_access_key_id = AKIAW7QASS6J5M3WENG3
-aws_secret_access_key = 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
+xx
+xx
