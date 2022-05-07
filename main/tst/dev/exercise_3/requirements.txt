@@ -1,3 +1,5 @@
 # add {your-package-name} to this requirements file
 pandas
-boto3	
+boto3
+example_package==1.0.0
+pyarrow==7.0.0
