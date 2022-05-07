@@ -1,4 +1,5 @@
-# from your_package_name import analytics
+from example_package import analytics
+import io
 import boto3
 import pandas as pd
 
@@ -39,6 +40,9 @@ def read_parquet(bucket: str = 'cmc-bds-de', object: str = 'wishes/you/good/luck
 
     # your code here
     # hint: use the s3 api
+    
+    response = s3.get_object(Bucket=bucket, Key=object)
+    df = pd.read_parquet(io.BytesIO(response['Body'].read()))    
 
     return df
 
@@ -64,6 +68,11 @@ def write_parquet(data: pd.DataFrame, bucket: str = 'cmc-bds-de', object: str = 
 
     # your code here
     # hint: use the s3 api
+    
+    out_buffer = io.BytesIO()
+    data.to_parquet(out_buffer, index=False)
+
+    s3.put_object(Bucket=bucket, Key=object, Body=out_buffer.getvalue())
 
 
 data = read_parquet()
